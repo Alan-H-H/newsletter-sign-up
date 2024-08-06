@@ -1,0 +1,156 @@
+body{
+    background-color: hsl(234, 29%, 20%);
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+    color: hsl(234, 29%, 20%);
+}
+
+.container__main{
+    background-color: white;
+    border-radius: 3em;
+    width: 800px;
+    height: 600px;
+    margin: 15em auto;
+    display: flex;
+    flex-direction: row;
+    padding: 1.5em;
+}
+
+.container__left{
+    padding-right: 5em;
+}
+
+h1{
+    font-size: 38px;
+}
+
+.container__left h4{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.list-item{
+    display: inline-flex;
+}
+
+.list-item h4{
+    padding-left: 1em;
+    font-weight: 400;
+}
+
+.list-item svg{
+    padding-top: 1em;
+}
+
+.mail__row p{
+    color: hsl(4, 100%, 67%);
+}
+
+.input__mail{
+    display: flex;
+    flex-direction: row;
+}
+
+.input__mail p{
+    padding-left: 6em;
+    display: none;
+    color: hsl(4, 100%, 67%);
+}
+
+input{
+    padding: 1em 4.5em;
+    margin-top: 0.5em;
+    border: 1px solid lightgray;
+}
+
+label{
+    padding-top: 1em;
+    font-weight: 800;
+    font-size: 12px;
+}
+
+button{
+    background-color: hsl(234, 29%, 20%);
+    border: none;
+    color: white;
+    padding: 1em 4em;
+    margin-top: 2em;
+    border-radius: 0.5em;
+}
+
+.mail__fail p{
+    display: flex;
+}
+
+.mail__fail input{
+    border: none;
+    border: 1px solid red;
+    background-color: #FF7377;
+    opacity: 0.5;
+}
+
+.container__fail{
+    display: none;
+}
+
+.success{
+    background-color: white;
+    border-radius: 3em;
+    width: 300px;
+    height: 300px;
+    margin: 15em auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+}
+
+@media ( width <= 1000px ){
+    body{
+        background-color: white;
+    }
+    .container__main{
+        background-color: white;
+        border-radius: 3em;
+        width: 350px;
+        margin: 10em auto;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .container__right{
+        margin-top: -75em;
+        margin-left: 0em;
+    }
+    .container__left{
+        padding-left: 2em;
+        margin-top: 20em;
+        padding-top: -10em;
+    }
+    .attribution{
+        margin-top: 30em;
+    }
+    .success__message{
+        width: 350px;
+    }
+    .success{
+        background-color: white;
+        border-radius: 3em;
+        width: 300px;
+        height: 300px;
+        margin: 5em auto;
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+    }
+    button{
+        font-size: 12px;
+        width: 295px;
+        background-color: hsl(234, 29%, 20%);
+        border: none;
+        color: white;
+        padding: 1em 4em;
+        margin-top: 2em;
+        border-radius: 0.5em;
+    }
+}
